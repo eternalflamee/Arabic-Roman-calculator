@@ -44,17 +44,12 @@ public class Main {
                 break;
             }
         }
-        try {
-            for (String s : roman) {
-                if (s.equals(numStr[1])) {
-                    romanStr2 = true;
-                    break;
-                }
+        for (String s : roman) {
+            if (s.equals(numStr[1])) {
+                romanStr2 = true;
+                break;
             }
-        } catch (IndexOutOfBoundsException e) {
-            throw new CalculatorException("Строка не является математической операцией");
         }
-
 
         if (romanStr1 && romanStr2) {
             number1 = romanToNumber(numStr[0]);
