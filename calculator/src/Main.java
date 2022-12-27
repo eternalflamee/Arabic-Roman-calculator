@@ -100,49 +100,4 @@ public class Main {
         };
     }
 
-       /*public static void read() throws CalculatorException {
-
-        String[] roman = {"X", "IX", "VIII", "VII", "VI", "V", "IV", "III", "II", "I"};
-
-        System.out.println("Калькулятор умеет выполнять операции сложения, вычитания, умножения и деления с двумя числами: a+b, a-b, a*b, a/b. Введите эти числа и нажмите enter: ");
-        Scanner scanner = new Scanner(System.in);
-        String text = scanner.nextLine();
-
-        String[] numStr = text.split("[+-/*]");
-
-        if (numStr.length > 2) {
-            throw new CalculatorException("Используйте только два числа");
-        }
-
-
-
-        for (String s : roman) {
-            if (s.equals(numStr[0])) {
-                romanStr1 = true;
-                break;
-            }
-        }
-        for (String s : roman) {
-            if (s.equals(numStr[1])) {
-                romanStr2 = true;
-                break;
-            }
-        }
-
-        if (romanStr1 && romanStr2) {
-            number1 = romanToNumber(numStr[0]);
-            number2 = romanToNumber(numStr[1]);
-        } else if (romanStr1 || romanStr2){
-            throw new CalculatorException("Введенные числа имеют разные системы счисления");
-        } else {
-            number1 = Integer.parseInt(numStr[0]);
-            number2 = Integer.parseInt(numStr[1]);
-        }
-        operation = text.charAt(numStr[0].length());
-
-        if ((number1 > 10 || number1 < 0) || (number2 > 10 || number2 < 0)) {
-            throw new CalculatorException("Введеные числа меньше 0 или больше 10");
-        }
-
-    }*/
 }
