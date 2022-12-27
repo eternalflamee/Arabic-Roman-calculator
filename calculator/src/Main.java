@@ -1,7 +1,9 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) throws CalculatorException {
-        System.out.println(calc("2+2"));
-        System.out.println(calc("V*V"));
+        Scanner scanner = new Scanner(System.in);
+        System.out.println(calc(scanner.nextLine()));
     }
 
     public static String calc(String input) throws CalculatorException{
@@ -11,7 +13,7 @@ public class Main {
         int number1;
         int number2;
 
-        System.out.println("Калькулятор умеет выполнять операции сложения, вычитания, умножения и деления с двумя числами: a+b, a-b, a*b, a/b. Введите эти числа и нажмите enter: ");
+        System.out.println("Калькулятор умеет выполнять операции сложения, вычитания, умножения и деления с двумя числами: a+b, a-b, a*b, a/b. Ваш ответ:");
 
 
         String[] numStr = input.split("[+-/*]");
